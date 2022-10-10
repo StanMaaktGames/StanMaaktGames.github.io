@@ -83,8 +83,14 @@ header h2 {
 section {
   position: absolute;
   top: 100%;
-  height: 100%;
+  height: 75%;
   width: 100%;
+}
+section.badges {
+  height: 140%;
+}
+section.projects {
+  height: 100%;
 }
 
 article {
@@ -94,20 +100,42 @@ article {
   top: 5%;
   left: 25%;
   width: 50%;
-  height: 85%;
+  height: 67%;
   border: #296674 solid 10px;
   border-radius: 10px;
+}
+article.badges {
+  top: 0%;
+}
+article#projects1 {
+  left: 0%;
+  height: 40%;
+  width: 40%;
+}
+article#projects2 {
+  left: 52.5%;
+  height: 45%;
+  width: 45%;
+}
+article#contact {
+  height: 31.5%;
 }
 
 article h1 {
   position: relative;
   text-align: center;
   font-size: 200%;
-  width: 40%;
-  left: 30%;
-  border: solid #307686 5px;
-  border-radius: 5px;
+  width: 30%;
+  left: 34%;
+  top: -5%;
+  border: solid #307686 0px;
+  border-radius: 20px;
   background-color: #307686;
+  padding: 1%;
+}
+article h1.projects1 {
+  width: 80%;
+  left: 9%;
 }
 
 article p {
@@ -115,6 +143,14 @@ article p {
   border-radius: 5px;
   background-color: #307686; 
   font-size: 150%;
+  position: relative;
+  top: -7.5%;
+}
+article p.projects1 {
+  border: solid #307686 5px;
+  border-radius: 5px;
+  background-color: #307686; 
+  font-size: 100%;
 }
 
 #transition {
@@ -126,11 +162,43 @@ article p {
 
 footer {
   position: absolute;
-  top: 200%;
+  top: 220%;
   left: 0%;
   width: 100%;
   height: 5%;
   text-align: center;
   background-color: #012B35;
   color: #6B949E;
+}
+footer#contact {
+  top: 180%;
+}
+footer#badges {
+  top: 235%;
+}
+
+tr:nth-child(even) {
+  background-color: #307686;
+}
+tr:nth-child(odd) {
+  background-color: #235762;
+}
+
+tr, table, td {
+  width: 100%;
+}
+
+table {
+  border: solid 5px #2e7282;
+  border-radius: 5px;
+  position: relative;
+  top: -5%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
 }
